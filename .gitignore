@@ -1,0 +1,9 @@
+out
+tmp
+*.so
+*.a
+*.dll
+*.dylib
+*.o
+tester
+
