@@ -1,10 +1,5 @@
 package main
 
-// #cgo CFLAGS: -I/Users/jonathanlima/src/github.com/pagarme/libabecs/include
-//
-// #include <libabecs/packet.h>
-// #include <libabecs/abecs.h>
-// #include <libmpos/mpos.h>
 //
 // #ifdef _WIN32
 // #define TMS_EXPORT __declspec(dllexport)
@@ -16,13 +11,13 @@ package main
 //
 // typedef tms_error_t (*tms_store_write_cb)(
 // 	const char *version,
-// 	abecs_table_load_record_cmd_t **tables,
+// 	void **tables,
 // 	unsigned int table_length,
-// 	mpos_application_data **applications,
+// 	void **applications,
 // 	unsigned int app_length,
-// 	mpos_risk_management_data **risk_management_data,
+// 	void **risk_management_data,
 // 	unsigned int risk_management_length,
-// 	mpos_acquirer_data **acquirers,
+// 	void **acquirers,
 // 	unsigned int acq_length,
 // 	void *user_data);
 //
